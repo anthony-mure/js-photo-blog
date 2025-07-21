@@ -11,3 +11,24 @@
 h1{
   font-size: 60px;
 }
+
+.card{
+  width: 20vw;
+  height: 50vh;
+  padding: 20px;
+  position: relative;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+}
+
+.pin-red{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  left: 100px;
+}
+
