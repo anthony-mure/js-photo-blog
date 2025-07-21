@@ -1,0 +1,13 @@
+
+
+.back-image{
+  background-image: url("../img/wall.png");
+}
+
+.back-img{
+  background-image: url("../img/cork.png");
+}
+
+h1{
+  font-size: 60px;
+}
