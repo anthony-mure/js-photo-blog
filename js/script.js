@@ -8,7 +8,7 @@ Studiamo bene la risposta e i dati che ci fornisce iniziando a pensare a come po
 
 //risultato chiamata endpoint
 
-[
+ [
     {
         "id": 1,
         "title": "Skate Park",
@@ -45,7 +45,7 @@ Studiamo bene la risposta e i dati che ci fornisce iniziando a pensare a come po
         "date": "30-08-2024",
         "url": "https://marcolanci.it/boolean/assets/pictures/6.png"
     }
-]
+];
 
 /*Milestone 3
 
@@ -56,8 +56,21 @@ Inseriamo un foglio JavaScript ed effettuiamo una chiamata AJAX all’API, sfrut
 const cards = document.getElementById('cards');
 
 axios.get('https://lanciweb.github.io/demo/api/pictures/').then(resp => {
+    const photos = resp.data;
 
-
-
-
+    photos.forEach(picture => {
+        const cardHTML = `
+        <div class="col">
+          <div class="card">
+            <img src="./img/pin.svg" class= "pin-red" alt ="">
+            <img src="${picture.url}" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text"><strong>${picture.title}</strong></p>
+              <p class="card-text">${picture.date}</p>
+            </div>
+          </div>
+        </div>
+        `;
+        cards.innerHTML += cardHTML;
+    });
 });
