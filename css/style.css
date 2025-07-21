@@ -1,4 +1,6 @@
-
+body{
+  font-family: sans-serif;
+}
 
 .back-image{
   background-image: url("../img/wall.png");
@@ -17,6 +19,8 @@ h1{
   height: 50vh;
   padding: 20px;
   position: relative;
+  border-radius: 0;
+  border: 2px solid black;
 }
 
 img{

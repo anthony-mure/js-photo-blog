@@ -65,8 +65,8 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then(resp => {
             <img src="./img/pin.svg" class= "pin-red" alt ="">
             <img src="${picture.url}" class="card-img-top" alt="">
             <div class="card-body">
-              <p class="card-text"><strong>${picture.title}</strong></p>
-              <p class="card-text">${picture.date}</p>
+              <p class="card-text fs-4"><strong>${picture.title}</strong></p>
+              <p class="card-text fs-5">${picture.date}</p>
             </div>
           </div>
         </div>
