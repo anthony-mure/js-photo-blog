@@ -36,3 +36,31 @@ img{
   left: 45%;
 }
 
+/* classi overlay-img*/
+
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba( 0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.img-overlay{
+  width: 40vw;
+  height: 40vh;
+  position: relative;
+  
+}
+
+.overlay-button{
+  font-size: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 100px;
+
+}
