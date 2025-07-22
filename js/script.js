@@ -73,4 +73,38 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then(resp => {
         `;
         cards.innerHTML += cardHTML;
     });
+
+    const images = document.querySelectorAll('.card img');
+
+    images.forEach((elem) =>{
+
+    elem.addEventListener('click', () =>{
+
+        overlay.classList.remove('d-none');
+
+        imgOverlay.src = elem.src;
+    });
 });
+
+});
+
+/*Milestone 2
+Facciamo sparire l’overlay con l’aiuto di una classe CSS che imposti il display: none .
+Dopodiché facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
+Cliccando invece il button di chiusura, l’overlay scompare nuovamente. */
+
+/*Milestone 3
+Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata all’interno dell’overlay. */
+
+//recupero gli elementi dal dom che mi servono
+
+const overlay = document.getElementById('overlay');
+const button = document.getElementById('overlay-button');
+const imgOverlay = document.getElementById('overlayImage');
+
+
+button.addEventListener('click', () => {
+
+     overlay.classList.add('d-none');
+
+}); 
