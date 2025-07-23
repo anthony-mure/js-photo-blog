@@ -17,8 +17,7 @@ h1{
 /*classi cards*/
 
 .card{
-  width: 20vw;
-  height: 50vh;
+ 
   padding: 20px;
   position: relative;
   border-radius: 0;
@@ -27,7 +26,7 @@ h1{
 
 img{
   width: 150px;
-  height: 150px;
+  
 }
 
 .pin-red{
